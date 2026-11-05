@@ -134,6 +134,122 @@ main {
   font-size: 0.97rem;
 }
 
+/* ---------------- Round 2: adopt and care ---------------- */
+
+.adopt-form {
+  background: var(--card);
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  box-shadow: var(--shadow);
+  padding: 20px 22px 24px;
+  max-width: 520px;
+}
+
+.field {
+  margin-bottom: 16px;
+}
+
+.field label {
+  display: block;
+  font-weight: 600;
+  margin-bottom: 6px;
+}
+
+.field select,
+.field input {
+  width: 100%;
+  max-width: 320px;
+  padding: 10px 12px;
+  font: inherit;
+  color: var(--ink);
+  background: #fffdf9;
+  border: 1px solid var(--line);
+  border-radius: 10px;
+}
+
+.field select:focus,
+.field input:focus {
+  outline: 2px solid var(--accent);
+  outline-offset: 1px;
+}
+
+.hint {
+  margin: 6px 0 0;
+  font-size: 0.85rem;
+  color: var(--muted);
+}
+
+.form-message {
+  margin: 12px 0 0;
+  min-height: 1.4em;
+  font-size: 0.95rem;
+  color: #a33d2a;
+}
+
+.btn {
+  font: inherit;
+  font-weight: 600;
+  color: #fffdf9;
+  background: var(--accent);
+  border: none;
+  border-radius: 999px;
+  padding: 10px 24px;
+  cursor: pointer;
+}
+
+.btn:hover {
+  background: #8f4a1e;
+}
+
+.btn:focus-visible {
+  outline: 2px solid var(--ink);
+  outline-offset: 2px;
+}
+
+/* The adopted dog card */
+.dog-panel {
+  background: var(--card);
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  box-shadow: var(--shadow);
+  padding: 20px 22px 24px;
+  max-width: 520px;
+}
+
+.dog-panel-head {
+  display: flex;
+  align-items: center;
+  gap: 18px;
+}
+
+.dog-panel-head img {
+  width: 110px;
+  height: auto;
+  flex-shrink: 0;
+}
+
+.dog-title-line {
+  margin: 0 0 6px;
+  font-size: 1.2rem;
+  font-weight: 700;
+}
+
+.stat {
+  margin: 2px 0;
+  color: var(--muted);
+}
+
+.stat span {
+  color: var(--ink);
+  font-weight: 600;
+}
+
+.actions {
+  display: flex;
+  gap: 12px;
+  margin-top: 16px;
+}
+
 /* ---------------- Footer ---------------- */
 
 .site-footer {

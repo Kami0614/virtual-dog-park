@@ -66,6 +66,50 @@
         </article>
       </div>
     </section>
+    <!-- ROUND 2: adopt one dog and look after it -->
+    <section class="panel" id="my-dog" aria-labelledby="my-dog-title">
+      <h2 id="my-dog-title">My Virtual Dog</h2>
+
+      <!-- adoption form: hidden after adopting, shown again if the dog is reset -->
+      <form id="adopt-form" class="adopt-form" novalidate>
+        <div class="field">
+          <label for="breed-choice">Choose a breed</label>
+          <select id="breed-choice" name="breed">
+            <option value="beagle">Beagle</option>
+            <option value="golden-retriever">Golden Retriever</option>
+            <option value="poodle">Poodle</option>
+          </select>
+        </div>
+
+        <div class="field">
+          <label for="dog-name">Dog name</label>
+          <input id="dog-name" name="name" type="text" maxlength="20"
+                 placeholder="e.g. Buddy" autocomplete="off" />
+          <p class="hint">Up to 20 characters. Spaces inside the name are allowed.</p>
+        </div>
+
+        <button type="submit" id="adopt-button" class="btn">Adopt</button>
+        <p id="form-message" class="form-message" role="alert"></p>
+      </form>
+
+      <!-- the adopted dog: hidden until a dog exists -->
+      <div id="dog-panel" class="dog-panel" hidden>
+        <div class="dog-panel-head">
+          <img id="dog-photo" src="assets/beagle.svg" alt="" />
+          <div class="dog-stats">
+            <p class="dog-title-line" id="dog-title-line"></p>
+            <p class="stat">Day <span id="dog-day"></span></p>
+            <p class="stat">Stage: <span id="dog-stage"></span></p>
+            <p class="stat">Happiness: <span id="dog-happiness"></span> / 100</p>
+          </div>
+        </div>
+
+        <div class="actions">
+          <button type="button" id="feed-button" class="btn">Feed</button>
+          <button type="button" id="play-button" class="btn">Play</button>
+        </div>
+      </div>
+    </section>
   </main>
 
   <footer class="site-footer">
