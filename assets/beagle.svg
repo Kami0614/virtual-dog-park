@@ -1,0 +1,42 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 300" role="img" aria-labelledby="beagleTitle">
+  <title id="beagleTitle">A simple drawing of a Beagle's head</title>
+
+  <!-- soft ground shadow -->
+  <ellipse cx="150" cy="274" rx="70" ry="11" fill="#000000" opacity="0.06" />
+
+  <!-- long floppy ears, drawn behind the head -->
+  <ellipse cx="94" cy="170" rx="26" ry="60" fill="#8b5a2b" transform="rotate(10 94 170)" />
+  <ellipse cx="206" cy="170" rx="26" ry="60" fill="#8b5a2b" transform="rotate(-10 206 170)" />
+
+  <!-- head -->
+  <ellipse cx="150" cy="138" rx="62" ry="58" fill="#c98a4b" />
+
+  <!-- white blaze down the middle of the face -->
+  <path d="M150 82 C136 86 126 108 126 138 C126 166 137 184 150 184
+           C163 184 174 166 174 138 C174 108 164 86 150 82 Z" fill="#fbf6ec" />
+
+  <!-- white muzzle -->
+  <ellipse cx="150" cy="176" rx="36" ry="25" fill="#fbf6ec" />
+
+  <!-- tan eyebrow spots -->
+  <ellipse cx="126" cy="120" rx="9" ry="5" fill="#8b5a2b" opacity="0.5" />
+  <ellipse cx="174" cy="120" rx="9" ry="5" fill="#8b5a2b" opacity="0.5" />
+
+  <!-- eyes -->
+  <circle cx="126" cy="141" r="8.5" fill="#3b3330" />
+  <circle cx="174" cy="141" r="8.5" fill="#3b3330" />
+  <circle cx="123" cy="138" r="2.6" fill="#ffffff" />
+  <circle cx="171" cy="138" r="2.6" fill="#ffffff" />
+
+  <!-- nose -->
+  <ellipse cx="150" cy="163" rx="15" ry="11" fill="#3b3330" />
+  <ellipse cx="145" cy="159" rx="4" ry="2.5" fill="#ffffff" opacity="0.45" />
+
+  <!-- mouth -->
+  <path d="M150 174 L150 181 M150 181 C144 189 135 188 131 182 M150 181 C156 189 165 188 169 182"
+        fill="none" stroke="#3b3330" stroke-width="3" stroke-linecap="round" />
+
+  <!-- tan cheek patches -->
+  <ellipse cx="104" cy="158" rx="14" ry="11" fill="#c98a4b" opacity="0.9" />
+  <ellipse cx="196" cy="158" rx="14" ry="11" fill="#c98a4b" opacity="0.9" />
+</svg>

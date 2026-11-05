@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Virtual Dog Park</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="wrap">
+      <h1>Virtual Dog Park</h1>
+      <p class="welcome">
+        Welcome to the park! Meet three friendly dogs in the encyclopedia below,
+        learn what each one needs every day, and enjoy your visit.
+      </p>
+    </div>
+  </header>
+
+  <main class="wrap">
+    <!-- ROUND 1: the dog encyclopedia -->
+    <section class="panel" aria-labelledby="encyclopedia-title">
+      <h2 id="encyclopedia-title">Dog Encyclopedia</h2>
+      <p class="panel-note">
+        Every picture here is a simple drawing made for this project, not a photograph.
+      </p>
+
+      <div class="dog-grid">
+        <article class="dog-card">
+          <img class="dog-art" src="assets/beagle.svg" alt="Illustration of a Beagle." />
+          <h3>Beagle</h3>
+          <dl class="dog-facts">
+            <dt>Size</dt>
+            <dd>Small to medium, about 33&ndash;41&nbsp;cm tall and 9&ndash;11&nbsp;kg.</dd>
+            <dt>Personality</dt>
+            <dd>Curious, cheerful and very social. Happiest with company and a job to do.</dd>
+            <dt>Everyday care</dt>
+            <dd>Two walks a day plus sniffing time. Brush once a week and check those long ears.</dd>
+          </dl>
+        </article>
+
+        <article class="dog-card">
+          <img class="dog-art" src="assets/golden-retriever.svg" alt="Illustration of a Golden Retriever." />
+          <h3>Golden Retriever</h3>
+          <dl class="dog-facts">
+            <dt>Size</dt>
+            <dd>Large, about 51&ndash;61&nbsp;cm tall and 25&ndash;34&nbsp;kg.</dd>
+            <dt>Personality</dt>
+            <dd>Gentle, patient and eager to please. Friendly with people, children and other dogs.</dd>
+            <dt>Everyday care</dt>
+            <dd>Long daily exercise and brushing three times a week to control shedding.</dd>
+          </dl>
+        </article>
+
+        <article class="dog-card">
+          <img class="dog-art" src="assets/poodle.svg" alt="Illustration of a Poodle." />
+          <h3>Poodle</h3>
+          <dl class="dog-facts">
+            <dt>Size</dt>
+            <dd>Toy to standard, about 24&ndash;60&nbsp;cm tall depending on the variety.</dd>
+            <dt>Personality</dt>
+            <dd>Clever, alert and playful. Learns quickly and likes being close to its owner.</dd>
+            <dt>Everyday care</dt>
+            <dd>Coat needs combing every other day and a trim every few weeks. Short walks plus play.</dd>
+          </dl>
+        </article>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="wrap">
+      <p>AIE1101 Virtual Dog Park &middot; <span id="year">2026</span></p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

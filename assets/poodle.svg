@@ -1,0 +1,44 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 300" role="img" aria-labelledby="poodleTitle">
+  <title id="poodleTitle">A simple drawing of a Poodle's head</title>
+
+  <!-- soft ground shadow -->
+  <ellipse cx="150" cy="274" rx="66" ry="11" fill="#000000" opacity="0.06" />
+
+  <!-- pom-pom ears behind the head -->
+  <circle cx="96" cy="150" r="26" fill="#e3c2a0" />
+  <circle cx="100" cy="188" r="24" fill="#e3c2a0" />
+  <circle cx="204" cy="150" r="26" fill="#e3c2a0" />
+  <circle cx="200" cy="188" r="24" fill="#e3c2a0" />
+
+  <!-- head -->
+  <ellipse cx="150" cy="152" rx="54" ry="56" fill="#efd3b0" />
+
+  <!-- curly top-knot: a small cluster of circles -->
+  <circle cx="150" cy="92" r="28" fill="#f7e6cd" />
+  <circle cx="123" cy="106" r="19" fill="#f7e6cd" />
+  <circle cx="177" cy="106" r="19" fill="#f7e6cd" />
+  <circle cx="150" cy="74" r="15" fill="#f7e6cd" />
+  <path d="M132 92 a10 10 0 1 0 14 -6 a9 9 0 1 0 12 6" fill="none" stroke="#e6cba8" stroke-width="2.5" stroke-linecap="round" />
+
+  <!-- narrow muzzle -->
+  <ellipse cx="150" cy="184" rx="31" ry="25" fill="#f7e6cd" />
+
+  <!-- eyes -->
+  <circle cx="128" cy="150" r="8.5" fill="#3b3330" />
+  <circle cx="172" cy="150" r="8.5" fill="#3b3330" />
+  <circle cx="125" cy="147" r="2.6" fill="#ffffff" />
+  <circle cx="169" cy="147" r="2.6" fill="#ffffff" />
+
+  <!-- nose -->
+  <ellipse cx="150" cy="170" rx="13" ry="10" fill="#3b3330" />
+  <ellipse cx="146" cy="167" rx="3.5" ry="2.2" fill="#ffffff" opacity="0.45" />
+
+  <!-- small closed smile -->
+  <path d="M150 180 L150 185 M150 185 C145 191 138 190 135 185 M150 185 C155 191 162 190 165 185"
+        fill="none" stroke="#3b3330" stroke-width="2.8" stroke-linecap="round" />
+
+  <!-- pink ribbon bow on the top-knot -->
+  <path d="M188 78 C178 68 168 74 172 82 C168 90 178 96 188 86 Z" fill="#e0857f" />
+  <path d="M196 88 C206 78 216 84 212 92 C216 100 206 106 196 96 Z" fill="#e0857f" />
+  <circle cx="192" cy="87" r="5" fill="#c96a63" />
+</svg>

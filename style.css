@@ -1,0 +1,172 @@
+/* ---------------------------------------------------------
+   Virtual Dog Park - stylesheet
+   One shared stylesheet for the whole page.
+   Colour, spacing and text sizes are kept in the variables
+   below so they are easy to change in one place.
+   --------------------------------------------------------- */
+
+:root {
+  --bg: #fbf7f1;
+  --card: #ffffff;
+  --ink: #2f2a25;
+  --muted: #6c625a;
+  --accent: #a95a28;
+  --accent-soft: #f6e7d7;
+  --line: #e8dccd;
+  --radius: 16px;
+  --shadow: 0 6px 18px rgba(85, 62, 40, 0.08);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  background: var(--bg);
+  color: var(--ink);
+  font-family: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  font-size: 17px;
+  line-height: 1.65;
+}
+
+/* Keeps content centred and stops lines getting too long */
+.wrap {
+  width: 100%;
+  max-width: 1040px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+/* ---------------- Header ---------------- */
+
+.site-header {
+  background: linear-gradient(180deg, #fdf1e2 0%, #fbf7f1 100%);
+  border-bottom: 1px solid var(--line);
+  padding: 48px 0 40px;
+}
+
+.site-header h1 {
+  margin: 0 0 8px;
+  font-size: 2.2rem;
+  letter-spacing: -0.5px;
+}
+
+.welcome {
+  margin: 0;
+  max-width: 60ch;
+  color: var(--muted);
+  font-size: 1.05rem;
+}
+
+/* ---------------- Panels and cards ---------------- */
+
+main {
+  padding: 36px 20px 56px;
+}
+
+.panel + .panel {
+  margin-top: 40px;
+}
+
+.panel h2 {
+  margin: 0 0 6px;
+  font-size: 1.5rem;
+}
+
+.panel-note {
+  margin: 0 0 22px;
+  color: var(--muted);
+  font-size: 0.95rem;
+}
+
+/* auto-fit + minmax means the cards sit side by side on a laptop
+   and stack on a phone without any extra code */
+.dog-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, 280px), 1fr));
+  gap: 22px;
+}
+
+.dog-card {
+  background: var(--card);
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  box-shadow: var(--shadow);
+  padding: 20px 22px 24px;
+}
+
+.dog-art {
+  display: block;
+  width: 100%;
+  max-width: 190px;
+  height: auto;
+  margin: 0 auto 10px;
+}
+
+.dog-card h3 {
+  margin: 0 0 12px;
+  font-size: 1.2rem;
+  text-align: center;
+}
+
+/* A definition list pairs each label with its explanation */
+.dog-facts {
+  margin: 0;
+}
+
+.dog-facts dt {
+  font-size: 0.78rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--accent);
+  margin-top: 14px;
+}
+
+.dog-facts dt:first-child {
+  margin-top: 0;
+}
+
+.dog-facts dd {
+  margin: 2px 0 0;
+  color: var(--muted);
+  font-size: 0.97rem;
+}
+
+/* ---------------- Footer ---------------- */
+
+.site-footer {
+  border-top: 1px solid var(--line);
+  padding: 22px 0 34px;
+  color: var(--muted);
+  font-size: 0.9rem;
+}
+
+.site-footer p {
+  margin: 0;
+}
+
+/* ---------------- Narrow screens ---------------- */
+
+@media (max-width: 640px) {
+  body {
+    font-size: 16px;
+  }
+
+  .site-header {
+    padding: 34px 0 28px;
+  }
+
+  .site-header h1 {
+    font-size: 1.7rem;
+  }
+
+  main {
+    padding: 26px 16px 44px;
+  }
+
+  .dog-card {
+    padding: 18px 16px 20px;
+  }
+}
