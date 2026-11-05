@@ -250,6 +250,71 @@ main {
   margin-top: 16px;
 }
 
+/* ---------------- Round 3: growth, saving, start over ---------------- */
+
+/* The dog picture grows with its stage. */
+.dog-photo {
+  transition: width 0.3s ease;
+}
+
+.dog-photo.stage-puppy {
+  width: 84px;
+}
+
+.dog-photo.stage-young {
+  width: 108px;
+}
+
+.dog-photo.stage-adult {
+  width: 132px;
+}
+
+/* A simple growth bar with three states. */
+.growth-bar {
+  width: 100%;
+  max-width: 240px;
+  height: 10px;
+  margin-top: 10px;
+  background: #f0e6d8;
+  border-radius: 999px;
+  overflow: hidden;
+}
+
+.growth-fill {
+  height: 100%;
+  width: 33%;
+  background: #e2b07a;
+  border-radius: 999px;
+  transition: width 0.3s ease, background-color 0.3s ease;
+}
+
+.growth-fill.stage-young {
+  width: 66%;
+  background: #cf8a3e;
+}
+
+.growth-fill.stage-adult {
+  width: 100%;
+  background: #8f4a1e;
+}
+
+.btn-ghost {
+  color: var(--accent);
+  background: transparent;
+  border: 1.5px solid var(--accent);
+}
+
+.btn-ghost:hover {
+  color: #fffdf9;
+  background: var(--accent);
+}
+
+.save-note {
+  margin: 14px 0 0;
+  font-size: 0.85rem;
+  color: var(--muted);
+}
+
 /* ---------------- Footer ---------------- */
 
 .site-footer {

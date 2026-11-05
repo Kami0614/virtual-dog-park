@@ -95,19 +95,28 @@
       <!-- the adopted dog: hidden until a dog exists -->
       <div id="dog-panel" class="dog-panel" hidden>
         <div class="dog-panel-head">
-          <img id="dog-photo" src="assets/beagle.svg" alt="" />
+          <img id="dog-photo" class="dog-photo" src="assets/beagle.svg" alt="" />
           <div class="dog-stats">
             <p class="dog-title-line" id="dog-title-line"></p>
             <p class="stat">Day <span id="dog-day"></span></p>
             <p class="stat">Stage: <span id="dog-stage"></span></p>
             <p class="stat">Happiness: <span id="dog-happiness"></span> / 100</p>
+            <div class="growth-bar" aria-hidden="true">
+              <div id="growth-fill" class="growth-fill"></div>
+            </div>
           </div>
         </div>
 
         <div class="actions">
           <button type="button" id="feed-button" class="btn">Feed</button>
           <button type="button" id="play-button" class="btn">Play</button>
+          <button type="button" id="next-day-button" class="btn">Next Day</button>
+          <button type="button" id="start-over-button" class="btn btn-ghost">Start Over</button>
         </div>
+        <p class="save-note">
+          Your dog is saved in this browser only (localStorage). It is not an online
+          account and it is never uploaded.
+        </p>
       </div>
     </section>
   </main>
