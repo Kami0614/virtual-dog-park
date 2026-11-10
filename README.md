@@ -12,8 +12,11 @@ external APIs and no package manager.
   spaces inside the name are allowed; empty names are rejected).
 - **Feed and Play** - each click adds +10 happiness, up to a maximum of 100.
 - **Next Day** - moves time forward: +1 day and -5 happiness (never below 0).
-- **Growth stages** - Day 1 is a Puppy, Days 2-3 a Young Dog, Day 4 onward an Adult Dog.
-  The stage is shown as text, in a growth bar and in the size of the illustration.
+- **Growth stages** - the dog changes every 15 days: Days 1-14 a Puppy, Days 15-29 an
+  Adult Dog, Day 30 onward a Senior Dog. Each stage has its own drawing (puppy, adult
+  and senior faces) and its own picture size.
+- **Happiness bar** - the bar under the happiness score always mirrors the number:
+  100/100 means a completely full bar, 0 means empty.
 - **Saved progress** - the dog is restored after a page refresh, on the same browser
   and device.
 - **Start Over** - asks for confirmation first; Cancel keeps the dog, Confirm deletes
@@ -37,7 +40,7 @@ Keep using the same browser and the same local address, or the saved dog will no
 | Adopt       | Day 1, Puppy stage, happiness 50              |
 | Feed / Play | happiness +10, maximum 100                    |
 | Next Day    | day +1, happiness -5, minimum 0               |
-| Growth      | Day 1 Puppy - Days 2-3 Young Dog - Day 4+ Adult Dog |
+| Growth      | Days 1-14 Puppy - Days 15-29 Adult Dog - Day 30+ Senior Dog |
 
 ## Where progress is stored
 
@@ -56,7 +59,9 @@ Try these in the browser and trust what you see:
 - [ ] A name containing `<` and `>` is displayed as plain text, safely.
 - [ ] Feed and Play raise happiness by 10 and stop at 100.
 - [ ] Next Day lowers happiness by 5, never below 0.
-- [ ] Day 2 shows "Young Dog"; Day 4 shows "Adult Dog".
+- [ ] The happiness bar width always matches the happiness score.
+- [ ] Day 14 shows "Puppy"; Day 15 shows "Adult Dog" with a new picture;
+      Day 30 shows "Senior Dog" with a grey-muzzled picture.
 - [ ] After a refresh the same dog comes back with its latest day and happiness.
 - [ ] Start Over asks for confirmation; Cancel keeps the dog, Confirm clears it, and
       the old dog does not return after a refresh.
@@ -64,5 +69,6 @@ Try these in the browser and trust what you see:
 
 ## About the images
 
-The three SVG files in `assets/` are simple illustrations created for this project -
-they are drawings, not photographs of real dogs.
+The SVG files in `assets/` are simple illustrations created for this project -
+they are drawings, not photographs of real dogs. Each breed has three drawings
+(puppy, adult and senior) so the dog visibly grows older as the days pass.

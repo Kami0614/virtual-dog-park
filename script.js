@@ -17,21 +17,31 @@ if (yearBox) {
    ========================================================= */
 
 // Everything we need to know about each breed, in one place.
+// Each breed has three drawings: puppy, adult and senior.
 var BREEDS = {
   "beagle": {
     label: "Beagle",
-    image: "assets/beagle.svg",
-    alt: "Illustration of a Beagle."
+    images: {
+      puppy: { src: "assets/beagle-puppy.svg", alt: "Illustration of a Beagle puppy." },
+      adult: { src: "assets/beagle.svg", alt: "Illustration of an adult Beagle." },
+      senior: { src: "assets/beagle-senior.svg", alt: "Illustration of a senior Beagle." }
+    }
   },
   "golden-retriever": {
     label: "Golden Retriever",
-    image: "assets/golden-retriever.svg",
-    alt: "Illustration of a Golden Retriever."
+    images: {
+      puppy: { src: "assets/golden-retriever-puppy.svg", alt: "Illustration of a Golden Retriever puppy." },
+      adult: { src: "assets/golden-retriever.svg", alt: "Illustration of an adult Golden Retriever." },
+      senior: { src: "assets/golden-retriever-senior.svg", alt: "Illustration of a senior Golden Retriever." }
+    }
   },
   "poodle": {
     label: "Poodle",
-    image: "assets/poodle.svg",
-    alt: "Illustration of a Poodle."
+    images: {
+      puppy: { src: "assets/poodle-puppy.svg", alt: "Illustration of a Poodle puppy." },
+      adult: { src: "assets/poodle.svg", alt: "Illustration of an adult Poodle." },
+      senior: { src: "assets/poodle-senior.svg", alt: "Illustration of a senior Poodle." }
+    }
   }
 };
 
@@ -46,18 +56,20 @@ function find(id) {
   return document.getElementById(id);
 }
 
-/* The growth rule lives in ONE function, so Day 2 is always
-   "Young Dog" and Day 4 onward is always "Adult Dog". */
+/* The life stages change every 15 days, so the dog visibly grows up:
+   Day 1-14   -> Puppy      (small picture, young face)
+   Day 15-29  -> Adult Dog  (bigger picture, grown-up face)
+   Day 30+    -> Senior Dog (biggest picture, grey muzzle)      */
 function stageFor(day) {
-  if (day <= 1) {
-    return "Puppy";
+  if (day <= 14) {
+    return { label: "Puppy", key: "puppy" };
   }
 
-  if (day <= 3) {
-    return "Young Dog";
+  if (day <= 29) {
+    return { label: "Adult Dog", key: "adult" };
   }
 
-  return "Adult Dog";
+  return { label: "Senior Dog", key: "senior" };
 }
 
 /* ---------- saving (Round 3) ----------
@@ -166,18 +178,19 @@ function showPet() {
   var stage = stageFor(pet.day);
   var photo = find("dog-photo");
   var fill = find("growth-fill");
-  var stageClass = "stage-" + stage.toLowerCase().replace(" ", "-");
+  var art = breed.images[stage.key];
 
-  photo.src = breed.image;
-  photo.alt = breed.alt;
-  photo.className = "dog-photo " + stageClass;
+  photo.src = art.src;
+  photo.alt = art.alt;
+  photo.className = "dog-photo stage-" + stage.key;
 
-  fill.className = "growth-fill " + stageClass;
+  // The bar under "Happiness" always mirrors the happiness score.
+  fill.style.width = pet.happiness + "%";
 
   // textContent keeps a name like "<Buddy>" as plain text, never as HTML.
   find("dog-title-line").textContent = pet.name + " the " + breed.label;
   find("dog-day").textContent = pet.day;
-  find("dog-stage").textContent = stage;
+  find("dog-stage").textContent = stage.label;
   find("dog-happiness").textContent = pet.happiness;
 }
 

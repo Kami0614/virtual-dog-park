@@ -252,7 +252,7 @@ main {
 
 /* ---------------- Round 3: growth, saving, start over ---------------- */
 
-/* The dog picture grows with its stage. */
+/* The dog picture changes size with its life stage (every 15 days). */
 .dog-photo {
   transition: width 0.3s ease;
 }
@@ -261,15 +261,16 @@ main {
   width: 84px;
 }
 
-.dog-photo.stage-young {
-  width: 108px;
-}
-
 .dog-photo.stage-adult {
   width: 132px;
 }
 
-/* A simple growth bar with three states. */
+.dog-photo.stage-senior {
+  width: 148px;
+}
+
+/* The happiness bar: its width is set from the happiness score in
+   script.js, so it always matches the number shown above it. */
 .growth-bar {
   width: 100%;
   max-width: 240px;
@@ -282,20 +283,10 @@ main {
 
 .growth-fill {
   height: 100%;
-  width: 33%;
-  background: #e2b07a;
-  border-radius: 999px;
-  transition: width 0.3s ease, background-color 0.3s ease;
-}
-
-.growth-fill.stage-young {
-  width: 66%;
+  width: 0;
   background: #cf8a3e;
-}
-
-.growth-fill.stage-adult {
-  width: 100%;
-  background: #8f4a1e;
+  border-radius: 999px;
+  transition: width 0.3s ease;
 }
 
 .btn-ghost {

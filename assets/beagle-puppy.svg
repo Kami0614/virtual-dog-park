@@ -1,0 +1,44 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 300" role="img" aria-labelledby="beaglePuppyTitle">
+  <title id="beaglePuppyTitle">A simple drawing of a Beagle puppy's head</title>
+
+  <!-- soft ground shadow -->
+  <ellipse cx="150" cy="274" rx="66" ry="11" fill="#000000" opacity="0.06" />
+
+  <!-- short floppy puppy ears, drawn behind the head -->
+  <ellipse cx="96" cy="164" rx="22" ry="42" fill="#8b5a2b" transform="rotate(10 96 164)" />
+  <ellipse cx="204" cy="164" rx="22" ry="42" fill="#8b5a2b" transform="rotate(-10 204 164)" />
+
+  <!-- big round puppy head -->
+  <ellipse cx="150" cy="140" rx="68" ry="64" fill="#c98a4b" />
+
+  <!-- white blaze down the middle of the face -->
+  <path d="M150 82 C136 86 126 108 126 140 C126 168 137 186 150 186
+           C163 186 174 168 174 140 C174 108 164 86 150 82 Z" fill="#fbf6ec" />
+
+  <!-- white muzzle -->
+  <ellipse cx="150" cy="178" rx="38" ry="26" fill="#fbf6ec" />
+
+  <!-- tan eyebrow spots -->
+  <ellipse cx="126" cy="118" rx="10" ry="5" fill="#8b5a2b" opacity="0.5" />
+  <ellipse cx="174" cy="118" rx="10" ry="5" fill="#8b5a2b" opacity="0.5" />
+
+  <!-- big puppy eyes -->
+  <circle cx="126" cy="142" r="11" fill="#3b3330" />
+  <circle cx="174" cy="142" r="11" fill="#3b3330" />
+  <circle cx="122" cy="138" r="3.4" fill="#ffffff" />
+  <circle cx="170" cy="138" r="3.4" fill="#ffffff" />
+  <circle cx="130" cy="146" r="1.6" fill="#ffffff" opacity="0.7" />
+  <circle cx="178" cy="146" r="1.6" fill="#ffffff" opacity="0.7" />
+
+  <!-- puppy nose -->
+  <ellipse cx="150" cy="164" rx="16" ry="11.5" fill="#3b3330" />
+  <ellipse cx="145" cy="160" rx="4.5" ry="2.6" fill="#ffffff" opacity="0.45" />
+
+  <!-- mouth -->
+  <path d="M150 174 L150 181 M150 181 C144 189 135 188 131 182 M150 181 C156 189 165 188 169 182"
+        fill="none" stroke="#3b3330" stroke-width="3" stroke-linecap="round" />
+
+  <!-- chubby blush cheeks -->
+  <ellipse cx="98" cy="162" rx="10" ry="7" fill="#e0995f" opacity="0.55" />
+  <ellipse cx="202" cy="162" rx="10" ry="7" fill="#e0995f" opacity="0.55" />
+</svg>

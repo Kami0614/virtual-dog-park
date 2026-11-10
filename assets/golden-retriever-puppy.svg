@@ -1,0 +1,44 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 300" role="img" aria-labelledby="goldenPuppyTitle">
+  <title id="goldenPuppyTitle">A simple drawing of a Golden Retriever puppy's head</title>
+
+  <!-- soft ground shadow -->
+  <ellipse cx="150" cy="274" rx="68" ry="11" fill="#000000" opacity="0.06" />
+
+  <!-- short fluffy puppy ears behind the head -->
+  <ellipse cx="92" cy="166" rx="24" ry="44" fill="#c98f3f" transform="rotate(14 92 166)" />
+  <ellipse cx="208" cy="166" rx="24" ry="44" fill="#c98f3f" transform="rotate(-14 208 166)" />
+
+  <!-- big round puppy head -->
+  <ellipse cx="150" cy="140" rx="68" ry="64" fill="#e0a951" />
+
+  <!-- lighter fur on the forehead -->
+  <ellipse cx="150" cy="120" rx="32" ry="34" fill="#eebb6a" />
+
+  <!-- fluffy fur tufts on top of the head -->
+  <path d="M114 90 C120 70 134 70 138 86 C144 70 158 70 162 86 C168 72 180 78 182 94 Z" fill="#e0a951" />
+
+  <!-- cream muzzle -->
+  <ellipse cx="150" cy="180" rx="40" ry="28" fill="#f6e3c2" />
+
+  <!-- big puppy eyes -->
+  <circle cx="125" cy="140" r="11" fill="#3a3226" />
+  <circle cx="175" cy="140" r="11" fill="#3a3226" />
+  <circle cx="121" cy="136" r="3.4" fill="#ffffff" />
+  <circle cx="171" cy="136" r="3.4" fill="#ffffff" />
+  <circle cx="129" cy="145" r="1.6" fill="#ffffff" opacity="0.7" />
+  <circle cx="179" cy="145" r="1.6" fill="#ffffff" opacity="0.7" />
+
+  <!-- puppy nose -->
+  <ellipse cx="150" cy="166" rx="17" ry="12.5" fill="#3a3226" />
+  <ellipse cx="145" cy="162" rx="4.5" ry="2.6" fill="#ffffff" opacity="0.45" />
+
+  <!-- open puppy smile with tongue -->
+  <path d="M150 178 L150 184" fill="none" stroke="#3a3226" stroke-width="3" stroke-linecap="round" />
+  <path d="M150 184 C143 194 132 191 129 183" fill="none" stroke="#3a3226" stroke-width="3" stroke-linecap="round" />
+  <path d="M150 184 C157 194 168 191 171 183" fill="none" stroke="#3a3226" stroke-width="3" stroke-linecap="round" />
+  <path d="M138 191 C138 201 148 203 150 195 C152 203 162 201 162 191 Z" fill="#e0857f" />
+
+  <!-- chubby blush cheeks -->
+  <ellipse cx="96" cy="162" rx="10" ry="7" fill="#f0b26a" opacity="0.6" />
+  <ellipse cx="204" cy="162" rx="10" ry="7" fill="#f0b26a" opacity="0.6" />
+</svg>

@@ -1,0 +1,48 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 300" role="img" aria-labelledby="beagleSeniorTitle">
+  <title id="beagleSeniorTitle">A simple drawing of a senior Beagle's head</title>
+
+  <!-- soft ground shadow -->
+  <ellipse cx="150" cy="274" rx="70" ry="11" fill="#000000" opacity="0.06" />
+
+  <!-- long floppy ears, drawn behind the head -->
+  <ellipse cx="94" cy="172" rx="26" ry="60" fill="#8b5a2b" transform="rotate(10 94 172)" />
+  <ellipse cx="206" cy="172" rx="26" ry="60" fill="#8b5a2b" transform="rotate(-10 206 172)" />
+
+  <!-- head -->
+  <ellipse cx="150" cy="138" rx="62" ry="58" fill="#c98a4b" />
+
+  <!-- white blaze down the middle of the face -->
+  <path d="M150 82 C136 86 126 108 126 138 C126 166 137 184 150 184
+           C163 184 174 166 174 138 C174 108 164 86 150 82 Z" fill="#fbf6ec" />
+
+  <!-- greying muzzle -->
+  <ellipse cx="150" cy="176" rx="36" ry="25" fill="#e3ddd2" />
+
+  <!-- grey eyebrow tufts -->
+  <ellipse cx="126" cy="114" rx="12" ry="5.5" fill="#a49c92" />
+  <ellipse cx="174" cy="114" rx="12" ry="5.5" fill="#a49c92" />
+
+  <!-- eyes with droopy upper lids -->
+  <circle cx="126" cy="141" r="8.5" fill="#3b3330" />
+  <circle cx="174" cy="141" r="8.5" fill="#3b3330" />
+  <circle cx="123" cy="138" r="2.6" fill="#ffffff" />
+  <circle cx="171" cy="138" r="2.6" fill="#ffffff" />
+  <path d="M117 133 Q126 129 135 133" fill="none" stroke="#6f675f" stroke-width="2.5" stroke-linecap="round" />
+  <path d="M165 133 Q174 129 183 133" fill="none" stroke="#6f675f" stroke-width="2.5" stroke-linecap="round" />
+
+  <!-- nose -->
+  <ellipse cx="150" cy="163" rx="15" ry="11" fill="#3b3330" />
+  <ellipse cx="145" cy="159" rx="4" ry="2.5" fill="#ffffff" opacity="0.45" />
+
+  <!-- gentle, calmer mouth -->
+  <path d="M150 174 L150 180 M150 180 C144 187 136 186 133 181 M150 180 C156 187 164 186 167 181"
+        fill="none" stroke="#3b3330" stroke-width="3" stroke-linecap="round" />
+
+  <!-- grey hairs on top of the head -->
+  <path d="M128 86 L133 78 M140 82 L144 74 M152 81 L155 73 M164 83 L169 76"
+        fill="none" stroke="#b9b1a7" stroke-width="3" stroke-linecap="round" />
+
+  <!-- tan cheek patches -->
+  <ellipse cx="104" cy="158" rx="14" ry="11" fill="#c98a4b" opacity="0.9" />
+  <ellipse cx="196" cy="158" rx="14" ry="11" fill="#c98a4b" opacity="0.9" />
+</svg>

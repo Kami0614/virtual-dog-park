@@ -1,0 +1,50 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 300" role="img" aria-labelledby="poodlePuppyTitle">
+  <title id="poodlePuppyTitle">A simple drawing of a Poodle puppy's head</title>
+
+  <!-- soft ground shadow -->
+  <ellipse cx="150" cy="274" rx="62" ry="11" fill="#000000" opacity="0.06" />
+
+  <!-- small pom-pom puppy ears behind the head -->
+  <circle cx="98" cy="152" r="20" fill="#e3c2a0" />
+  <circle cx="102" cy="184" r="18" fill="#e3c2a0" />
+  <circle cx="202" cy="152" r="20" fill="#e3c2a0" />
+  <circle cx="198" cy="184" r="18" fill="#e3c2a0" />
+
+  <!-- big round puppy head -->
+  <ellipse cx="150" cy="152" rx="58" ry="60" fill="#efd3b0" />
+
+  <!-- curly top-knot: a small cluster of circles -->
+  <circle cx="150" cy="94" r="26" fill="#f7e6cd" />
+  <circle cx="126" cy="108" r="17" fill="#f7e6cd" />
+  <circle cx="174" cy="108" r="17" fill="#f7e6cd" />
+  <circle cx="150" cy="76" r="14" fill="#f7e6cd" />
+  <path d="M133 92 a10 10 0 1 0 14 -6 a9 9 0 1 0 12 6" fill="none" stroke="#e6cba8" stroke-width="2.5" stroke-linecap="round" />
+
+  <!-- narrow muzzle -->
+  <ellipse cx="150" cy="186" rx="32" ry="26" fill="#f7e6cd" />
+
+  <!-- big puppy eyes -->
+  <circle cx="128" cy="150" r="10.5" fill="#3b3330" />
+  <circle cx="172" cy="150" r="10.5" fill="#3b3330" />
+  <circle cx="124" cy="146" r="3.4" fill="#ffffff" />
+  <circle cx="168" cy="146" r="3.4" fill="#ffffff" />
+  <circle cx="132" cy="154" r="1.6" fill="#ffffff" opacity="0.7" />
+  <circle cx="176" cy="154" r="1.6" fill="#ffffff" opacity="0.7" />
+
+  <!-- puppy nose -->
+  <ellipse cx="150" cy="172" rx="14" ry="10.5" fill="#3b3330" />
+  <ellipse cx="146" cy="169" rx="3.8" ry="2.4" fill="#ffffff" opacity="0.45" />
+
+  <!-- small puppy smile -->
+  <path d="M150 181 L150 186 M150 186 C145 192 138 191 135 186 M150 186 C155 192 162 191 165 186"
+        fill="none" stroke="#3b3330" stroke-width="2.8" stroke-linecap="round" />
+
+  <!-- chubby blush cheeks -->
+  <ellipse cx="104" cy="168" rx="9" ry="6.5" fill="#f0c6a0" opacity="0.7" />
+  <ellipse cx="196" cy="168" rx="9" ry="6.5" fill="#f0c6a0" opacity="0.7" />
+
+  <!-- pink ribbon bow on the top-knot -->
+  <path d="M186 80 C176 70 166 76 170 84 C166 92 176 98 186 88 Z" fill="#e0857f" />
+  <path d="M194 90 C204 80 214 86 210 94 C214 102 204 108 194 98 Z" fill="#e0857f" />
+  <circle cx="190" cy="89" r="5" fill="#c96a63" />
+</svg>
