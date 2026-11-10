@@ -42,6 +42,11 @@ Keep using the same browser and the same local address, or the saved dog will no
 | Next Day    | day +1, happiness -5, minimum 0               |
 | Growth      | Days 1-14 Puppy - Days 15-29 Adult Dog - Day 30+ Senior Dog |
 
+> Note: the lab manual's default growth rule is "Day 1 Puppy, Days 2-3 Young Dog,
+> Day 4 onward Adult Dog". This project intentionally uses a slower 15-day-per-stage
+> rule with three life stages (puppy / adult / senior) instead, so the dog's age is
+> easier to see over time.
+
 ## Where progress is stored
 
 The adopted dog (name, breed, day, happiness) is saved under the storage key
