@@ -252,7 +252,9 @@ main {
 
 /* ---------------- Round 3: growth, saving, start over ---------------- */
 
-/* The dog picture changes size with its life stage (every 15 days). */
+/* The dog picture changes size with its life stage (the manual's
+   default rule: Puppy on Day 1, Young Dog on Days 2-3, Adult from
+   Day 4 onward). */
 .dog-photo {
   transition: width 0.3s ease;
 }
@@ -261,12 +263,12 @@ main {
   width: 84px;
 }
 
-.dog-photo.stage-adult {
-  width: 132px;
+.dog-photo.stage-young {
+  width: 108px;
 }
 
-.dog-photo.stage-senior {
-  width: 148px;
+.dog-photo.stage-adult {
+  width: 132px;
 }
 
 /* The happiness bar: its width is set from the happiness score in

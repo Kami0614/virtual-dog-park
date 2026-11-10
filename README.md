@@ -12,9 +12,10 @@ external APIs and no package manager.
   spaces inside the name are allowed; empty names are rejected).
 - **Feed and Play** - each click adds +10 happiness, up to a maximum of 100.
 - **Next Day** - moves time forward: +1 day and -5 happiness (never below 0).
-- **Growth stages** - the dog changes every 15 days: Days 1-14 a Puppy, Days 15-29 an
-  Adult Dog, Day 30 onward a Senior Dog. Each stage has its own drawing (puppy, adult
-  and senior faces) and its own picture size.
+- **Growth stages** - Day 1 a Puppy, Days 2-3 a Young Dog, Day 4 onward an Adult Dog
+  (the lab manual's default rule). The picture changes with the stage: the puppy face
+  for the first three days, the adult face from Day 4, and the picture also grows
+  larger at each stage.
 - **Happiness bar** - the bar under the happiness score always mirrors the number:
   100/100 means a completely full bar, 0 means empty.
 - **Saved progress** - the dog is restored after a page refresh, on the same browser
@@ -40,12 +41,7 @@ Keep using the same browser and the same local address, or the saved dog will no
 | Adopt       | Day 1, Puppy stage, happiness 50              |
 | Feed / Play | happiness +10, maximum 100                    |
 | Next Day    | day +1, happiness -5, minimum 0               |
-| Growth      | Days 1-14 Puppy - Days 15-29 Adult Dog - Day 30+ Senior Dog |
-
-> Note: the lab manual's default growth rule is "Day 1 Puppy, Days 2-3 Young Dog,
-> Day 4 onward Adult Dog". This project intentionally uses a slower 15-day-per-stage
-> rule with three life stages (puppy / adult / senior) instead, so the dog's age is
-> easier to see over time.
+| Growth      | Day 1 Puppy - Days 2-3 Young Dog - Day 4+ Adult Dog |
 
 ## Where progress is stored
 
@@ -65,8 +61,8 @@ Try these in the browser and trust what you see:
 - [ ] Feed and Play raise happiness by 10 and stop at 100.
 - [ ] Next Day lowers happiness by 5, never below 0.
 - [ ] The happiness bar width always matches the happiness score.
-- [ ] Day 14 shows "Puppy"; Day 15 shows "Adult Dog" with a new picture;
-      Day 30 shows "Senior Dog" with a grey-muzzled picture.
+- [ ] Day 1 shows "Puppy"; Day 2 shows "Young Dog"; Day 4 shows "Adult Dog"
+      with the grown-up picture.
 - [ ] After a refresh the same dog comes back with its latest day and happiness.
 - [ ] Start Over asks for confirmation; Cancel keeps the dog, Confirm clears it, and
       the old dog does not return after a refresh.
@@ -75,5 +71,6 @@ Try these in the browser and trust what you see:
 ## About the images
 
 The SVG files in `assets/` are simple illustrations created for this project -
-they are drawings, not photographs of real dogs. Each breed has three drawings
-(puppy, adult and senior) so the dog visibly grows older as the days pass.
+they are drawings, not photographs of real dogs. Each breed has a puppy drawing
+(used on Days 1-3) and an adult drawing (used from Day 4 onward), so the dog
+visibly grows up as the days pass.

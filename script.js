@@ -56,20 +56,27 @@ function find(id) {
   return document.getElementById(id);
 }
 
-/* The life stages change every 15 days, so the dog visibly grows up:
-   Day 1-14   -> Puppy      (small picture, young face)
-   Day 15-29  -> Adult Dog  (bigger picture, grown-up face)
-   Day 30+    -> Senior Dog (biggest picture, grey muzzle)      */
+/* The growth rule follows the lab manual's default:
+   Day 1      -> Puppy      (small picture, young face)
+   Days 2-3   -> Young Dog  (bigger picture, still the young face)
+   Day 4+     -> Adult Dog  (biggest picture, grown-up face)      */
 function stageFor(day) {
-  if (day <= 14) {
+  if (day <= 1) {
     return { label: "Puppy", key: "puppy" };
   }
 
-  if (day <= 29) {
-    return { label: "Adult Dog", key: "adult" };
+  if (day <= 3) {
+    return { label: "Young Dog", key: "young" };
   }
 
-  return { label: "Senior Dog", key: "senior" };
+  return { label: "Adult Dog", key: "adult" };
+}
+
+/* Which drawing belongs to which stage: the dog keeps the puppy face
+   while it is a Puppy or a Young Dog, and gets the adult face from
+   Day 4 onward. */
+function imageKeyFor(stageKey) {
+  return stageKey === "adult" ? "adult" : "puppy";
 }
 
 /* ---------- saving (Round 3) ----------
@@ -178,7 +185,7 @@ function showPet() {
   var stage = stageFor(pet.day);
   var photo = find("dog-photo");
   var fill = find("growth-fill");
-  var art = breed.images[stage.key];
+  var art = breed.images[imageKeyFor(stage.key)];
 
   photo.src = art.src;
   photo.alt = art.alt;
